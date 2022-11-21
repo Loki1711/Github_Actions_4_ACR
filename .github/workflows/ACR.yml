@@ -36,4 +36,4 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: ${{ steps.docker_tags.outputs.tags }}
+        tags: ${{ secrets.ACR_ENDPOINT }}/${{ env.IMAGE_NAME }}:${{ steps.docker_tags.outputs.tags }}
