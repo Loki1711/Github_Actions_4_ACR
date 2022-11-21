@@ -7,7 +7,7 @@ env:
   IMAGE_NAME: lokiacr-nginx
 
 jobs:
-  docker:
+  Build:
     runs-on: ubuntu-latest
     steps:
     - name: Login to ACR
