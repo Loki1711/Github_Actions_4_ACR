@@ -1,7 +1,7 @@
 name: Docker Image Build & Push to ACR CI
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 
 env:
   IMAGE_NAME: lokiacr-nginx
@@ -20,4 +20,3 @@ jobs:
         registry: ${{ secrets.REGISTRY }}
         repository: ${{ secrets.REPOSITORY }}
         image: test-nginx
-        dockerfile: ../Dockerfile
