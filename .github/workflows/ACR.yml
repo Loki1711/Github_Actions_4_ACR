@@ -20,4 +20,3 @@ jobs:
         registry: ${{ secrets.REGISTRY }}
         repository: ${{ secrets.REPOSITORY }}
         image: test-nginx
-        dockerfile: ../Dockerfile
