@@ -8,6 +8,7 @@ env:
 
 jobs:
   Build:
+    name: Build & Push container image to ACR
     runs-on: ubuntu-latest
     steps:
     - name: Login to ACR
